@@ -10,7 +10,7 @@
 
 <p>
 Bu proje, <b>Wolfenstein</b> serisinin geçmişten günümüze tüm oyunlarını, hikayelerini ve gelişimini modern ve şık bir web arayüzüyle sunar. <br/>
-HTML, CSS (Tailwind) ve JavaScript ile hazırlanmıştır. <br/>
+HTML, CSS  ve JavaScript ile hazırlanmıştır. <br/>
 Kullanıcılar, oyun kartlarına tıklayarak detaylı bilgi modalı görebilir ve zaman çizelgesinde serinin evrimini inceleyebilir.
 </p>
 
@@ -18,11 +18,10 @@ Kullanıcılar, oyun kartlarına tıklayarak detaylı bilgi modalı görebilir v
 
 <h2>🚀 Özellikler</h2>
 <ul>
-  <li>Mobil uyumlu ve modern tasarım</li>
-  <li>Oyun kartları ve detay modalları</li>
+  <li> Modern tasarım</li>
   <li>Zaman çizelgesi ile serinin evrimi</li>
   <li>Yumuşak kaydırma ve animasyonlar</li>
-  <li>Yerel ve harici görsellerle zenginleştirilmiş içerik</li>
+  <li>Görsellerle zenginleştirilmiş içerik</li>
 </ul>
 
 ---
@@ -42,7 +41,7 @@ Kullanıcılar, oyun kartlarına tıklayarak detaylı bilgi modalı görebilir v
     <pre><code>git clone https://github.com/Darkingfate/Wolfenstein.git</code></pre>
   </li>
   <li>Proje klasörüne girin:
-    <pre><code>cd W11olfenstein</code></pre>
+    <pre><code>cd Wolfenstein</code></pre>
   </li>
   <li>Herhangi bir sunucuya gerek yoktur, <b>wolfenstein.html</b> dosyasını tarayıcınızda açmanız yeterlidir.</li>
 </ol>
@@ -92,7 +91,7 @@ SOFTWARE.
     <a href="https://www.linkedin.com/in/yigit-sahin-570556285/" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white" alt="LinkedIn"/>
       
-    </a>
+    
   </li>
 </ul>
 
