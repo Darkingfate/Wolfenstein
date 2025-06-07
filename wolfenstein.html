@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Wolfenstein Serisi - Geçmişten Günümüze</title>
+    <link rel="icon" type="image/jpeg" href="images/img1.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="min-h-screen">
+    <header>
+        <div class="header-inner">
+            <div class="logo-area">
+                <img src="images/img1.jpg" alt="Wolfenstein Logo">
+            </div>
+            <nav>
+                <a href="#hero" class="nav-link">Ana Sayfa</a>
+                <a href="#games" class="nav-link">Oyunlar</a>
+                <a href="#timeline" class="nav-link">Zaman Çizelgesi</a>
+                <a href="#about" class="nav-link">Hakkında</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Geçmişten Günümüze <span class="text-primary">Wolfenstein</span></h1>
+            <p>Nazi rejiminin alternatif tarihinde geçen efsanevi FPS serisinin tüm oyunları ve hikayeleri. B.J. Blazkowicz'in destansı mücadelesini keşfedin.</p>
+            <a href="#games" class="btn">Oyunları Keşfet</a>
+        </div>
+    </section>
+
+    <section id="games" class="py-20 bg-[#1a1a1a]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 animate-fade-in">Wolfenstein Oyunları</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                
+                <div class="game-card bg-[#2d2d2d] rounded-lg overflow-hidden shadow-lg animate-fade-in delay-100">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/İmg2.jpg" alt="Castle Wolfenstein" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Castle Wolfenstein</h3>
+                            <span class="text-sm bg-gray-700 text-gray-300 px-2 py-1 rounded">1981</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">Serinin başlangıcı olan bu oyun, Nazi kontrolündeki bir kalede geçen gizlilik tabanlı bir aksiyon-macera oyunuydu. Oyuncular, değerli savaş planlarını çalarak kaçmaya çalışıyordu.</p>
+                        <button class="btn !rounded-button bg-primary hover:bg-red-800 text-white font-bold py-2 px-4 w-full" data-game="castle-wolfenstein">Detayları Gör</button>
+                    </div>
+                </div>
+
+                
+                <div class="game-card bg-[#2d2d2d] rounded-lg overflow-hidden shadow-lg animate-fade-in delay-200">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/İmg3.jpg" alt="Beyond Castle Wolfenstein" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Beyond Castle Wolfenstein</h3>
+                            <span class="text-sm bg-gray-700 text-gray-300 px-2 py-1 rounded">1984</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">Castle Wolfenstein'ın devamı olan bu oyunda, oyuncular Hitler'i öldürmek için Nazi sığınağına sızma görevini üstleniyor. Gizlilik mekanikleri ve görev tabanlı oynanış sunuyordu.</p>
+                        <button class="btn !rounded-button bg-primary hover:bg-red-800 text-white font-bold py-2 px-4 w-full" data-game="beyond-castle-wolfenstein">Detayları Gör</button>
+                    </div>
+                </div>
+
+               
+                <div class="game-card bg-[#2d2d2d] rounded-lg overflow-hidden shadow-lg animate-fade-in delay-300">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/İmg4.jpg" alt="Wolfenstein 3D" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Wolfenstein 3D</h3>
+                            <span class="text-sm bg-gray-700 text-gray-300 px-2 py-1 rounded">1992</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">Modern FPS türünün öncüsü olan Wolfenstein 3D, B.J. Blazkowicz'in Nazi kontrolündeki Castle Wolfenstein'dan kaçış hikayesini anlatıyor. İkonik bir oyun haline geldi.</p>
+                        <button class="btn !rounded-button bg-primary hover:bg-red-800 text-white font-bold py-2 px-4 w-full" data-game="wolfenstein-3d">Detayları Gör</button>
+                    </div>
+                </div>
+
+                
+                <div class="game-card bg-[#2d2d2d] rounded-lg overflow-hidden shadow-lg animate-fade-in delay-400">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/İmg5.jpg" alt="Spear of Destiny" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Spear of Destiny</h3>
+                            <span class="text-sm bg-gray-700 text-gray-300 px-2 py-1 rounded">1992</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">Wolfenstein 3D'nin yan oyunu olan Spear of Destiny, B.J. Blazkowicz'in Kader Mızrağı'nı Nazilerden geri almak için verdiği mücadeleyi anlatıyor.</p>
+                        <button class="btn !rounded-button bg-primary hover:bg-red-800 text-white font-bold py-2 px-4 w-full" data-game="spear-of-destiny">Detayları Gör</button>
+                    </div>
+                </div>
+
+                
+                <div class="game-card bg-[#2d2d2d] rounded-lg overflow-hidden shadow-lg animate-fade-in delay-500">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/img6.jpg" alt="Return to Castle Wolfenstein" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Return to Castle Wolfenstein</h3>
+                            <span class="text-sm bg-gray-700 text-gray-300 px-2 py-1 rounded">2001</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">Serinin yeniden başlatılması olan bu oyun, Nazi Almanyası'nın doğaüstü ve okült deneylerine karşı mücadele eden B.J. Blazkowicz'i konu alıyor.</p>
+                        <button class="btn !rounded-button bg-primary hover:bg-red-800 text-white font-bold py-2 px-4 w-full" data-game="return-to-castle-wolfenstein">Detayları Gör</button>
+                    </div>
+                </div>
+
+                
+                <div class="game-card bg-[#2d2d2d] rounded-lg overflow-hidden shadow-lg animate-fade-in delay-100">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/img7.jpg" alt="Wolfenstein: Enemy Territory" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Wolfenstein: Enemy Territory</h3>
+                            <span class="text-sm bg-gray-700 text-gray-300 px-2 py-1 rounded">2003</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">Ücretsiz çok oyunculu bir FPS oyunu olan Enemy Territory, Müttefik ve Eksen kuvvetleri arasındaki sınıf tabanlı takım savaşlarını içeriyordu.</p>
+                        <button class="btn !rounded-button bg-primary hover:bg-red-800 text-white font-bold py-2 px-4 w-full" data-game="wolfenstein-enemy-territory">Detayları Gör</button>
+                    </div>
+                </div>
+
+                
+                <div class="game-card bg-[#2d2d2d] rounded-lg overflow-hidden shadow-lg animate-fade-in delay-200">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/İmg8.jpg" alt="Wolfenstein (2009)" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Wolfenstein</h3>
+                            <span class="text-sm bg-gray-700 text-gray-300 px-2 py-1 rounded">2009</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">Bu oyunda B.J. Blazkowicz, Nazilerin doğaüstü "Perde" enerjisini kullanma çabalarını durdurmak için Isenstadt şehrine gidiyor. Açık dünya unsurları içeriyordu.</p>
+                        <button class="btn !rounded-button bg-primary hover:bg-red-800 text-white font-bold py-2 px-4 w-full" data-game="wolfenstein-2009">Detayları Gör</button>
+                    </div>
+                </div>
+
+                
+                <div class="game-card bg-[#2d2d2d] rounded-lg overflow-hidden shadow-lg animate-fade-in delay-300">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/img9.jpg" alt="Wolfenstein: The New Order" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Wolfenstein: The New Order</h3>
+                            <span class="text-sm bg-gray-700 text-gray-300 px-2 py-1 rounded">2014</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">Alternatif bir 1960'larda geçen bu oyunda, Nazilerin II. Dünya Savaşı'nı kazandığı bir dünyada B.J. Blazkowicz'in direniş mücadelesini anlatıyor.</p>
+                        <button class="btn !rounded-button bg-primary hover:bg-red-800 text-white font-bold py-2 px-4 w-full" data-game="wolfenstein-the-new-order">Detayları Gör</button>
+                    </div>
+                </div>
+
+                
+                <div class="game-card bg-[#2d2d2d] rounded-lg overflow-hidden shadow-lg animate-fade-in delay-400">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/img10.jpg" alt="Wolfenstein: The Old Blood" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Wolfenstein: The Old Blood</h3>
+                            <span class="text-sm bg-gray-700 text-gray-300 px-2 py-1 rounded">2015</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">The New Order'ın öncesinde geçen bu oyun, B.J. Blazkowicz'in 1946'da Castle Wolfenstein'a sızma ve Nazi okült araştırmalarını durdurma görevini anlatıyor.</p>
+                        <button class="btn !rounded-button bg-primary hover:bg-red-800 text-white font-bold py-2 px-4 w-full" data-game="wolfenstein-the-old-blood">Detayları Gör</button>
+                    </div>
+                </div>
+
+                
+                <div class="game-card bg-[#2d2d2d] rounded-lg overflow-hidden shadow-lg animate-fade-in delay-500">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/img11.jpg" alt="Wolfenstein II: The New Colossus" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Wolfenstein II: The New Colossus</h3>
+                            <span class="text-sm bg-gray-700 text-gray-300 px-2 py-1 rounded">2017</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">1961'de Nazi işgali altındaki Amerika'da geçen bu oyunda, B.J. Blazkowicz ikinci Amerikan Devrimi'ni başlatmak için mücadele ediyor.</p>
+                        <button class="btn !rounded-button bg-primary hover:bg-red-800 text-white font-bold py-2 px-4 w-full" data-game="wolfenstein-the-new-colossus">Detayları Gör</button>
+                    </div>
+                </div>
+
+                
+                <div class="game-card bg-[#2d2d2d] rounded-lg overflow-hidden shadow-lg animate-fade-in delay-100">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/img12.jpg" alt="Wolfenstein: Youngblood" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Wolfenstein: Youngblood</h3>
+                            <span class="text-sm bg-gray-700 text-gray-300 px-2 py-1 rounded">2019</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">1980'lerde geçen bu yan oyunda, B.J. Blazkowicz'in ikiz kızları Jess ve Soph, kayıp babalarını Nazi işgali altındaki Paris'te arıyor.</p>
+                        <button class="btn !rounded-button bg-primary hover:bg-red-800 text-white font-bold py-2 px-4 w-full" data-game="wolfenstein-youngblood">Detayları Gör</button>
+                    </div>
+                </div>
+
+                
+                <div class="game-card bg-[#2d2d2d] rounded-lg overflow-hidden shadow-lg animate-fade-in delay-200">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/img13.jpg" alt="Wolfenstein: Cyberpilot" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Wolfenstein: Cyberpilot</h3>
+                            <span class="text-sm bg-gray-700 text-gray-300 px-2 py-1 rounded">2019</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">VR oyunu olan Cyberpilot'ta, oyuncular Fransız direniş hareketi için çalışan bir hacker olarak Nazi savaş makinelerini ele geçiriyor.</p>
+                        <button class="btn !rounded-button bg-primary hover:bg-red-800 text-white font-bold py-2 px-4 w-full" data-game="wolfenstein-cyberpilot">Detayları Gör</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <div class="container timeline-container">
+            <h2 class="timeline-title">Wolfenstein Zaman Çizelgesi</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-year">1981</span>
+                        <h4>Castle Wolfenstein</h4>
+                        <p>Silas Warner tarafından geliştirilen ve Muse Software tarafından yayınlanan ilk Wolfenstein oyunu, 2D gizlilik tabanlı bir aksiyon-macera oyunuydu.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-year">1984</span>
+                        <h4>Beyond Castle Wolfenstein</h4>
+                        <p>İlk oyunun devamı olan bu yapım, oyuncuların Hitler'i öldürmek için bir Nazi sığınağına sızmasını konu alıyordu.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-year">1992</span>
+                        <h4>Wolfenstein 3D & Spear of Destiny</h4>
+                        <p>id Software tarafından geliştirilen Wolfenstein 3D, modern FPS türünün öncüsü oldu. Aynı yıl çıkan Spear of Destiny ise bir yan oyun olarak piyasaya sürüldü.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2001</span>
+                        <h4>Return to Castle Wolfenstein</h4>
+                        <p>Gray Matter Interactive ve Nerve Software tarafından geliştirilen bu oyun, serinin yeniden başlatılması olarak Nazi Almanyası'nın doğaüstü deneylerini konu alıyordu.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2003</span>
+                        <h4>Wolfenstein: Enemy Territory</h4>
+                        <p>Splash Damage tarafından geliştirilen ücretsiz çok oyunculu FPS oyunu, sınıf tabanlı takım savaşlarına odaklanıyordu.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2009</span>
+                        <h4>Wolfenstein</h4>
+                        <p>Raven Software tarafından geliştirilen bu oyun, Nazilerin doğaüstü "Perde" enerjisini kullanma çabalarını durdurmak için mücadele eden B.J. Blazkowicz'i konu alıyordu.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2014</span>
+                        <h4>Wolfenstein: The New Order</h4>
+                        <p>MachineGames tarafından geliştirilen bu oyun, Nazilerin II. Dünya Savaşı'nı kazandığı alternatif bir 1960'lar dünyasında geçiyordu.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2015</span>
+                        <h4>Wolfenstein: The Old Blood</h4>
+                        <p>The New Order'ın öncesinde geçen bu oyun, 1946'da Castle Wolfenstein'a sızma ve Nazi okült araştırmalarını durdurma görevini anlatıyordu.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2017</span>
+                        <h4>Wolfenstein II: The New Colossus</h4>
+                        <p>Nazi işgali altındaki Amerika'da geçen bu oyunda, B.J. Blazkowicz ikinci Amerikan Devrimi'ni başlatmak için mücadele ediyordu.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2019</span>
+                        <h4>Wolfenstein: Youngblood & Cyberpilot</h4>
+                        <p>Youngblood, B.J. Blazkowicz'in ikiz kızlarını konu alan bir yan oyun olarak çıkarken, Cyberpilot ise serinin ilk VR deneyimini sunuyordu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <img src="images/img14.jpg" alt="Wolfenstein Serisi Evrimi">
+            <div class="about-content">
+                <h2>Wolfenstein Serisi Hakkında</h2>
+                <h3>Efsanevi Bir Seri</h3>
+                <p>Wolfenstein serisi, video oyun tarihinin en uzun soluklu ve etkili serilerinden biridir. 1981'de başlayan bu seri, FPS (First Person Shooter) türünün temellerini atan yapımlardan biri olarak kabul edilir. Her yeni oyun, döneminin teknolojik sınırlarını zorlayan grafikler ve oyun mekanikleri sunmaya devam etmiştir.</p>
+                <h3>B.J. Blazkowicz'in Hikayesi</h3>
+                <p>Serinin ana karakteri William Joseph "B.J." Blazkowicz, Amerikan-Polonyalı bir asker olarak Nazi rejimine karşı verdiği amansız mücadeleyle tanınır. Modern oyunlarda, alternatif bir tarihte Nazilerin II. Dünya Savaşı'nı kazandığı bir dünyada geçen olaylar, B.J.'nin kişisel hikayesi ve direniş mücadelesiyle harmanlanır.</p>
+                <h3>Teknolojik Yenilikler</h3>
+                <p>Wolfenstein 3D, 1992'de 3D grafikleri ve akıcı oynanışıyla devrim yaratmıştır. Serinin her yeni oyunu, döneminin teknolojik sınırlarını zorlayan grafikler ve oyun mekanikleri sunmaya devam etmiştir.</p>
+                <h3>Alternatif Tarih ve Bilim Kurgu</h3>
+                <p>Modern Wolfenstein oyunları, Nazi teknolojisi, okült araştırmalar ve alternatif tarih senaryolarını harmanlayan zengin bir dünya sunar. Retro-fütüristik teknolojiler, doğaüstü unsurlar ve karanlık bir atmosfer, serinin imza özellikleri haline gelmiştir.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#121212] py-10">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="text-gray-500">© 2025 Wolfenstein Arşivi. Tüm hakları saklıdır.</p>
+                <p class="text-gray-600 text-sm mt-2">Bu site hayranlar tarafından oluşturulmuştur ve Wolfenstein markasının resmi bir parçası değildir. Tüm oyun görselleri ve içerikleri ilgili sahiplerine aittir.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <button id="closeModal" class="close-btn">&times;</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+</body>
+</html>

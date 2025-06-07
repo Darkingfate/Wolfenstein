@@ -1,0 +1,421 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #121212;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    z-index: 50;
+}
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    height: 48px;
+}
+nav {
+    display: flex;
+    gap: 32px;
+    margin-left: auto;
+}
+.logo-area {
+    flex-shrink: 0;
+}
+.nav-link {
+    color: #ccc;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #bf0a30;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: #bf0a30;
+    transition: width 0.3s;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+.btn {
+    background: #bf0a30;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 8px;
+}
+.btn:hover {
+    background: #8a081c;
+    transform: scale(1.05);
+}
+section {
+    padding: 80px 0 0 0;
+}
+#hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/img1.1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+#hero .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 24px;
+}
+#hero .text-primary {
+    color: #bf0a30;
+}
+#hero p {
+    color: #e0e0e0;
+    font-size: 1.25rem;
+    margin-bottom: 32px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.game-card {
+    background: #2d2d2d;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.game-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.game-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+}
+.game-card .p-6 {
+    padding: 24px;
+}
+.game-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.game-card span {
+    background: #444;
+    color: #ccc;
+    font-size: 0.9rem;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+.game-card p {
+    color: #bbb;
+    margin-bottom: 16px;
+}
+footer {
+    background: #121212;
+    padding: 40px 0;
+    color: #666;
+    text-align: center;
+    font-size: 1rem;
+}
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.7);
+}
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+.modal .modal-content {
+    background: #232323;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 32px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+}
+.modal .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.modal .close-btn:hover {
+    color: #fff;
+}
+.animate-fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.timeline-container {
+    padding: 0 32px 80px 32px;
+}
+.timeline-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 48px;
+    color: #fff;
+}
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: #bf0a30;
+    z-index: 0;
+}
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 24px 40px;
+    box-sizing: border-box;
+}
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+.timeline-item .timeline-content {
+    background: #2d2d2d;
+    padding: 24px 32px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    display: inline-block;
+    min-width: 260px;
+    max-width: 340px;
+}
+.timeline-item.left .timeline-content {
+    margin-left: auto;
+}
+.timeline-item.right .timeline-content {
+    margin-right: auto;
+}
+.timeline-year {
+    display: inline-block;
+    background: #bf0a30;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.timeline-item.left .timeline-year {
+    right: -64px;
+}
+.timeline-item.right .timeline-year {
+    left: -64px;
+}
+@media (max-width: 900px) {
+    .timeline-item, .timeline-item.left, .timeline-item.right {
+        width: 100%;
+        left: 0 !important;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .timeline::before {
+        left: 24px;
+        transform: none;
+    }
+    .timeline-item .timeline-content {
+        margin-left: 64px;
+        min-width: 0;
+        max-width: 100%;
+    }
+    .timeline-year {
+        left: 0;
+        right: auto;
+    }
+}
+
+/* Modal detay içeriği görsel ve şık tasarım */
+.modal-inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.modal-game-img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    margin-bottom: 8px;
+}
+.modal-game-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #bf0a30;
+    margin: 0;
+}
+.modal-game-meta {
+    color: #bbb;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+.modal-game-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+    justify-content: center;
+}
+.modal-game-feature {
+    background: #444;
+    color: #eee;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+.modal-game-desc {
+    color: #e0e0e0;
+    font-size: 1.05rem;
+    margin-top: 8px;
+    text-align: left;
+    max-width: 400px;
+}
+
+/* Hakkında kısmı şıklaştırma */
+#about {
+    background: #181818;
+    padding: 80px 0;
+}
+#about .container {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+}
+#about img {
+    width: 340px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+#about .about-content {
+    max-width: 600px;
+}
+#about h2 {
+    font-size: 2.2rem;
+    color: #bf0a30;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+#about h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 24px;
+}
+#about p {
+    color: #e0e0e0;
+    font-size: 1.08rem;
+    margin-bottom: 16px;
+    line-height: 1.7;
+    background: rgba(45,45,45,0.7);
+    padding: 12px 18px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+@media (max-width: 900px) {
+    #about .container {
+        flex-direction: column;
+        gap: 24px;
+    }
+    #about img {
+        width: 100%;
+        max-width: 340px;
+    }
+}
